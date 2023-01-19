@@ -34,9 +34,11 @@
             // 
             // pnlLogin
             // 
-            this.pnlLogin.Location = new System.Drawing.Point(444, 144);
+            this.pnlLogin.BackColor = System.Drawing.Color.Transparent;
+            this.pnlLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLogin.BackgroundImage")));
+            this.pnlLogin.Location = new System.Drawing.Point(349, 36);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(350, 350);
+            this.pnlLogin.Size = new System.Drawing.Size(500, 500);
             this.pnlLogin.TabIndex = 0;
             // 
             // FrmLogin
@@ -53,6 +55,7 @@
             this.Name = "FrmLogin";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
 
         }

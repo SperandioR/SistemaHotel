@@ -16,5 +16,10 @@ namespace SistemaHotel
         {
             InitializeComponent();
         }
+        //Criando um evento do Frml-Load.
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {     //calculando a centralização da tela de login sobre a tela de fundo do sistema.Obtendo o size 500 de W e H dividindo por 2.
+            pnlLogin.Location = new Point(this.Width / 2 - 250, this.Height / 2 - 250); //Acessando a propriedade Location, gerando uma nova localização new Point.
+        }
     }
 }
