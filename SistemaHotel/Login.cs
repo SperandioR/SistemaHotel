@@ -32,6 +32,12 @@ namespace SistemaHotel
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (txtUsuario.Text == "") //aplicando uma condicional
+            {
+                MessageBox.Show("Preencha o Usuário");  // caixa de msg
+                txtUsuario.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
+                return;
+            }
 
         }
     }
