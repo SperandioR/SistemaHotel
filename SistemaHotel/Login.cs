@@ -32,9 +32,9 @@ namespace SistemaHotel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "") //aplicando uma condicional
+            if (txtUsuario.Text == "" && txtSenha.Text == "") //aplicando uma condicional
             {
-                MessageBox.Show("Preencha o Usuário");  // caixa de msg
+                MessageBox.Show("Preencha os Campos");  // caixa de msg
                 txtUsuario.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
