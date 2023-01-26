@@ -23,7 +23,7 @@ namespace SistemaHotel
         {
 
         }
-                //Button de Login.
+        //Button de Login.
         private void button1_Click(object sender, EventArgs e)
         {
             if (txtUsuario.Text == "") //aplicando uma condicional
@@ -33,13 +33,18 @@ namespace SistemaHotel
                 return;
             }
 
-            if (txtSenha.Text =="") //aplicando uma condicional
+            if (txtSenha.Text == "") //aplicando uma condicional
             {
                 MessageBox.Show("Preencha a Senha");  // caixa de msg
                 txtSenha.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
+            
             //AQUI VAI O CÓDIGO PARA O LOGIN
+
+            //Instanciando o objeto FrmMenu
+            FrmMenu form = new FrmMenu(); // criando um objeto(form), da classe(FrmMenu) e instanciando(new FrmMenu).
+            form.Show(); //Inicialiando o meu formulário.
         }
     }
 }

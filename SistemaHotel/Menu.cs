@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaHotel
 {
-    public partial class Menu : Form
+    public partial class FrmMenu : Form
     {
-        public Menu()
+        public FrmMenu()
         {
             InitializeComponent();
         }
