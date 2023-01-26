@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaHotel
@@ -29,16 +23,23 @@ namespace SistemaHotel
         {
 
         }
-
+                //Button de Login.
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "" && txtSenha.Text == "") //aplicando uma condicional
+            if (txtUsuario.Text == "") //aplicando uma condicional
             {
-                MessageBox.Show("Preencha os Campos");  // caixa de msg
+                MessageBox.Show("Preencha o Usuário");  // caixa de msg
                 txtUsuario.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
 
+            if (txtSenha.Text =="") //aplicando uma condicional
+            {
+                MessageBox.Show("Preencha a Senha");  // caixa de msg
+                txtSenha.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
+                return;
+            }
+            //AQUI VAI O CÓDIGO PARA O LOGIN
         }
     }
 }
