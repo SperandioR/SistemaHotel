@@ -44,6 +44,7 @@ namespace SistemaHotel
 
             //Instanciando o objeto FrmMenu
             FrmMenu form = new FrmMenu(); // criando um objeto(form), da classe(FrmMenu) e instanciando(new FrmMenu).
+            this.Hide(); // Ocutar o formulário de login e abre o formulário de Menu.
             form.Show(); //Inicialiando o meu formulário.
         }
     }
