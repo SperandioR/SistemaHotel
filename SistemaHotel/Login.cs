@@ -41,13 +41,18 @@ namespace SistemaHotel
                 txtSenha.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
-            
+
             //AQUI VAI O CÓDIGO PARA O LOGIN
 
             //Instanciando o objeto FrmMenu
             FrmMenu form = new FrmMenu(); // criando um objeto(form), da classe(FrmMenu) e instanciando(new FrmMenu).
             this.Hide(); // Ocutar o formulário de login e abre o formulário de Menu.
-            form.Show(); //Inicialiando o meu formulário.
+            form.Show(); //Inicialiando o menu formulário.
+        }
+        //criando um evento do tipo chave.
+        private void FrmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            MessageBox.Show("Tecla Precionada"); //Ao clicar em uma tecla aparecerá uma msg.
         }
     }
 }
