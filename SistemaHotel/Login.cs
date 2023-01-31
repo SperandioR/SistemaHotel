@@ -52,7 +52,10 @@ namespace SistemaHotel
         //criando um evento do tipo chave.
         private void FrmLogin_KeyDown(object sender, KeyEventArgs e)
         {
-            MessageBox.Show("Tecla Precionada"); //Ao clicar em uma tecla aparecerá uma msg.
+            if(e.KeyCode== Keys.Enter)
+            {
+                MessageBox.Show("Tecla enter");
+            }
         }
     }
 }
