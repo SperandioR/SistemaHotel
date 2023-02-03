@@ -28,6 +28,19 @@ namespace SistemaHotel
         //Button de Login.
         private void button1_Click(object sender, EventArgs e)
         {
+            ChamarLogin();
+        }
+        //criando um evento do tipo chave.
+        private void FrmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode== Keys.Enter)
+            {
+                ChamarLogin();
+            }
+        }
+        //criando um novo método de chamada ao apertar a tecla Enter.
+        private void ChamarLogin()
+        {
             if (txtUsuario.Text == "") //aplicando uma condicional
             {
                 MessageBox.Show("Preencha o Usuário");  // caixa de msg
@@ -49,13 +62,7 @@ namespace SistemaHotel
             this.Hide(); // Ocutar o formulário de login e abre o formulário de Menu.
             form.Show(); //Inicialiando o menu formulário.
         }
-        //criando um evento do tipo chave.
-        private void FrmLogin_KeyDown(object sender, KeyEventArgs e)
-        {
-            if(e.KeyCode== Keys.Enter)
-            {
-                MessageBox.Show("Tecla enter");
-            }
-        }
+    
+    
     }
 }
