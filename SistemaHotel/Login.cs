@@ -33,7 +33,7 @@ namespace SistemaHotel
         //criando um evento do tipo chave.
         private void FrmLogin_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode== Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 ChamarLogin();
             }
@@ -59,10 +59,16 @@ namespace SistemaHotel
 
             //Instanciando o objeto FrmMenu
             FrmMenu form = new FrmMenu(); // criando um objeto(form), da classe(FrmMenu) e instanciando(new FrmMenu).
-            this.Hide(); // Ocutar o formulário de login e abre o formulário de Menu.
+            //this.Hide(); // Ocutar o formulário de login e abre o formulário de Menu.
+            Limpar(); //limpa o usuário e senha na tela de login antes de chamar a tela de menu.
             form.Show(); //Inicialiando o menu formulário.
         }
-    
-    
+        //Metodo para limpar o usuário e senha digitado na caixa.
+        private void Limpar()
+        {
+            txtUsuario.Text = "";
+            txtSenha.Text = "";
+            txtUsuario.Focus(); //usuário recebe o foco no botão usuário após fechar a tela de formulário Menu.
+        }
     }
 }
