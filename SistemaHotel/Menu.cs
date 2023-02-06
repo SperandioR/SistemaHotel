@@ -16,10 +16,15 @@ namespace SistemaHotel
         {
             InitializeComponent();
         }
-
+        //Rendimensionando o menu 
         private void FrmMenu_Resize(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;   
+            this.WindowState = FormWindowState.Maximized; //mantem maximizado a tela de Menu quando o mesmo for redimensionado.
+        }
+
+        private void logountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
