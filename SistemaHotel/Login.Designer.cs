@@ -99,12 +99,12 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmLogin_KeyDown);
+            this.Resize += new System.EventHandler(this.FrmLogin_Resize);
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
             this.ResumeLayout(false);
