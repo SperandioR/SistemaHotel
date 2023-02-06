@@ -21,7 +21,7 @@ namespace SistemaHotel
         {
             this.WindowState = FormWindowState.Maximized; //mantem maximizado a tela de Menu quando o mesmo for redimensionado.
         }
-
+        //Submenu logount para logar da tela principal do Menu.
         private void logountToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
