@@ -35,10 +35,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 646);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmMenu";
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Resize += new System.EventHandler(this.FrmMenu_Resize);
             this.ResumeLayout(false);
 
         }

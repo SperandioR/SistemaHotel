@@ -70,7 +70,7 @@ namespace SistemaHotel
             txtSenha.Text = "";
             txtUsuario.Focus(); //usuário recebe o foco no botão usuário após fechar a tela de formulário Menu.
         }
-        //Redicionamento da tela de login conformerme o tamanho da tela (Ao restaurar a tela).
+        //Redimensionado a tela de login conformerme o tamanho da tela (Ao restaurar a tela).
         private void FrmLogin_Resize(object sender, EventArgs e)
         {
             pnlLogin.Location = new Point(this.Width / 2 - 250, this.Height / 2 - 250);

@@ -16,5 +16,10 @@ namespace SistemaHotel
         {
             InitializeComponent();
         }
+
+        private void FrmMenu_Resize(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;   
+        }
     }
 }
