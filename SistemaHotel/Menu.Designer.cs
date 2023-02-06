@@ -38,7 +38,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmMenu";
-            this.Text = "Menu";
+            this.Text = "Hotel Resort Ubatuba";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Resize += new System.EventHandler(this.FrmMenu_Resize);
             this.ResumeLayout(false);
