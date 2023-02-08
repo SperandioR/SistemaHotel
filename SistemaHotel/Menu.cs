@@ -26,5 +26,11 @@ namespace SistemaHotel
         {
             Close();
         }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            pnlTopo.BackColor = Color.FromArgb(250, 250, 250);
+            pnlRight.BackColor = Color.FromArgb(150, 150, 150);
+        }
     }
 }
