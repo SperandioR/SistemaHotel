@@ -54,10 +54,13 @@
             this.MenuSair = new System.Windows.Forms.ToolStripMenuItem();
             this.logountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlTopo = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlRight = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.pnlTopo.SuspendLayout();
             this.pnlRight.SuspendLayout();
@@ -95,31 +98,31 @@
             // funcionáriosToolStripMenuItem
             // 
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
-            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.funcionáriosToolStripMenuItem.Text = "Funcionários";
             // 
             // hópedesToolStripMenuItem
             // 
             this.hópedesToolStripMenuItem.Name = "hópedesToolStripMenuItem";
-            this.hópedesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.hópedesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hópedesToolStripMenuItem.Text = "Hóspedes";
             // 
             // quartosToolStripMenuItem
             // 
             this.quartosToolStripMenuItem.Name = "quartosToolStripMenuItem";
-            this.quartosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.quartosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quartosToolStripMenuItem.Text = "Quartos";
             // 
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             // 
             // serviçosToolStripMenuItem
             // 
             this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.serviçosToolStripMenuItem.Text = "Serviços";
             // 
             // MenuProdutos
@@ -135,13 +138,13 @@
             // novoProdutoToolStripMenuItem
             // 
             this.novoProdutoToolStripMenuItem.Name = "novoProdutoToolStripMenuItem";
-            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoProdutoToolStripMenuItem.Text = "Novo Produto";
             // 
             // estoqueToolStripMenuItem
             // 
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             // 
             // MenuMovimentacoes
@@ -158,19 +161,19 @@
             // novaVendaToolStripMenuItem
             // 
             this.novaVendaToolStripMenuItem.Name = "novaVendaToolStripMenuItem";
-            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.novaVendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novaVendaToolStripMenuItem.Text = "Nova Venda";
             // 
             // novoServiçoToolStripMenuItem1
             // 
             this.novoServiçoToolStripMenuItem1.Name = "novoServiçoToolStripMenuItem1";
-            this.novoServiçoToolStripMenuItem1.Size = new System.Drawing.Size(159, 22);
+            this.novoServiçoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.novoServiçoToolStripMenuItem1.Text = "Novo Serviço";
             // 
             // entradaESaídasToolStripMenuItem
             // 
             this.entradaESaídasToolStripMenuItem.Name = "entradaESaídasToolStripMenuItem";
-            this.entradaESaídasToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.entradaESaídasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.entradaESaídasToolStripMenuItem.Text = "Entrada e Saídas";
             // 
             // MenuReservas
@@ -252,11 +255,26 @@
             this.pnlTopo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlTopo.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pnlTopo.Controls.Add(this.button4);
+            this.pnlTopo.Controls.Add(this.button3);
+            this.pnlTopo.Controls.Add(this.button2);
             this.pnlTopo.Controls.Add(this.button1);
             this.pnlTopo.Location = new System.Drawing.Point(0, 27);
             this.pnlTopo.Name = "pnlTopo";
             this.pnlTopo.Size = new System.Drawing.Size(582, 75);
             this.pnlTopo.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(12, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 65);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // pnlRight
             // 
@@ -292,17 +310,41 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Hora:";
             // 
-            // button1
+            // button2
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 65);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(103, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(70, 65);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(282, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(70, 65);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(190, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(70, 69);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // FrmMenu
             // 
@@ -361,5 +403,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
