@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaHotel.Cadastros
 {
-    public partial class Funcionarios : Form
+    public partial class FrmFuncionarios : Form
     {
-        public Funcionarios()
+        public FrmFuncionarios()
         {
             InitializeComponent();
         }
