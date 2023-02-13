@@ -2,13 +2,13 @@
 
 METODOLOGIA
 
-Esse é um sistema desktop voltado para uso em hotéis e pousadas com foco no Front-end para cadastro de clientes.
+Este é um sistema desktop voltado para uso em hotéis e pousadas com foco no Front-end para cadastro de clientes.
 
  - Tela de login.
  - Propriedade dos formulários.
- - Formulário do Menu.
- - TextBox e Botões.
- - Incones do Menu.
+ - Formulário do menu.
+ - TextBox e botões.
+ - Ícones do menu.
  
  ⚡ A primeira regra de qualquer tecnologia utilizada nos negócios é que a automação aplicada a uma operação eficiente aumentará a eficiência. A segunda é que a automação aplicada a uma operação ineficiente aumentará a ineficiência.
 
