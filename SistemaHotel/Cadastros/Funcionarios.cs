@@ -16,5 +16,21 @@ namespace SistemaHotel.Cadastros
         {
             InitializeComponent();
         }
+
+        private void FrmFuncionarios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
