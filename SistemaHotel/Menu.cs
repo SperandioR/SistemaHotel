@@ -21,7 +21,7 @@ namespace SistemaHotel
         {
             this.WindowState = FormWindowState.Maximized; //mantem maximizado a tela de Menu quando o mesmo for redimensionado.
         }
-        //Submenu logount para logar da tela principal do Menu.
+        //Submenu logount para deslogar da tela principal do Menu.
         private void logountToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
@@ -31,6 +31,12 @@ namespace SistemaHotel
         {
             pnlTopo.BackColor = Color.FromArgb(230, 230, 230);
             pnlRight.BackColor = Color.FromArgb(130, 130, 130);
+        }
+        //Criando um evento, referenciando a pasta cadastro FrmFuncionario e instaciando o mesmo.
+        private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastros.FrmFuncionarios form = new Cadastros.FrmFuncionarios();
+            form.Show(); //abrir o formulário de funcionários.
         }
     }
 }
