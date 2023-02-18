@@ -19,3 +19,5 @@ Bill Gates.
 </p>
 
 ![GitHub Org's stars](https://img.shields.io/github/stars/SperandioR?style=social)
+
+![2023-02-17 21-55-28](https://user-images.githubusercontent.com/102339706/219823395-636885dc-4af3-4f8a-9796-92f01e7e7813.gif)
