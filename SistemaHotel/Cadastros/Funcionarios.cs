@@ -44,10 +44,10 @@ namespace SistemaHotel.Cadastros
             txtTel.Text = " ";
             txtEndereco.Text = " ";
         }
-
+        //Eventos
         private void FrmFuncionarios_Load(object sender, EventArgs e)
         {
-
+            rbNome.Checked = true; //criando uma propriedade checked.
         }
 
         private void label1_Click(object sender, EventArgs e)

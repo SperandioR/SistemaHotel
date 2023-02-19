@@ -105,7 +105,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(531, 96);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(149, 20);
-            this.txtEndereco.TabIndex = 54;
+            this.txtEndereco.TabIndex = 3;
             // 
             // label4
             // 
@@ -133,7 +133,7 @@
             this.txtTel.Mask = "(99) 00000-0000";
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(98, 20);
-            this.txtTel.TabIndex = 56;
+            this.txtTel.TabIndex = 4;
             // 
             // label5
             // 
@@ -167,7 +167,7 @@
             this.cbCargo.Location = new System.Drawing.Point(313, 160);
             this.cbCargo.Name = "cbCargo";
             this.cbCargo.Size = new System.Drawing.Size(98, 21);
-            this.cbCargo.TabIndex = 60;
+            this.cbCargo.TabIndex = 5;
             // 
             // grid
             // 
