@@ -17,6 +17,34 @@ namespace SistemaHotel.Cadastros
             InitializeComponent();
         }
 
+        //Metodo para habilitar os campo dentro do FrmFuncionarios.
+        private void habilitarCampos()
+        {
+            txtNome.Enabled = true;
+            txtCPF.Enabled = true;
+            txtTel.Enabled = true;
+            txtEndereco.Enabled = true;
+            cbCargo.Enabled = true;
+        }
+        //Metodo para desabilitar os campos.
+        private void desabilitarCampos()
+        {
+            txtNome.Enabled = false;
+            txtCPF.Enabled = false;
+            txtTel.Enabled = false;
+            txtEndereco.Enabled = false;
+            cbCargo.Enabled = false;
+
+        }
+        //Metodo para limpar o texto de cada campo.
+        private void limparCampos()
+        {
+            txtNome.Text = " ";
+            txtCPF.Text = " ";
+            txtTel.Text = " ";
+            txtEndereco.Text = " ";
+        }
+
         private void FrmFuncionarios_Load(object sender, EventArgs e)
         {
 

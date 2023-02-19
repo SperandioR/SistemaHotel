@@ -73,6 +73,7 @@
             // 
             // txtNome
             // 
+            this.txtNome.Enabled = false;
             this.txtNome.Location = new System.Drawing.Point(79, 96);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(149, 20);
@@ -100,6 +101,7 @@
             // 
             // txtEndereco
             // 
+            this.txtEndereco.Enabled = false;
             this.txtEndereco.Location = new System.Drawing.Point(531, 96);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(149, 20);
@@ -117,6 +119,7 @@
             // 
             // txtCPF
             // 
+            this.txtCPF.Enabled = false;
             this.txtCPF.Location = new System.Drawing.Point(313, 96);
             this.txtCPF.Mask = "000,000,000-00";
             this.txtCPF.Name = "txtCPF";
@@ -125,6 +128,7 @@
             // 
             // txtTel
             // 
+            this.txtTel.Enabled = false;
             this.txtTel.Location = new System.Drawing.Point(79, 157);
             this.txtTel.Mask = "(99) 00000-0000";
             this.txtTel.Name = "txtTel";
@@ -153,6 +157,7 @@
             // 
             // cbCargo
             // 
+            this.cbCargo.Enabled = false;
             this.cbCargo.FormattingEnabled = true;
             this.cbCargo.Items.AddRange(new object[] {
             "Camareiro(a)",
@@ -177,6 +182,7 @@
             // 
             // txtBuscarCPF
             // 
+            this.txtBuscarCPF.Enabled = false;
             this.txtBuscarCPF.Location = new System.Drawing.Point(531, 53);
             this.txtBuscarCPF.Mask = "000,000,000-00";
             this.txtBuscarCPF.Name = "txtBuscarCPF";
@@ -223,6 +229,7 @@
             // btnSalar
             // 
             this.btnSalar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalar.Enabled = false;
             this.btnSalar.FlatAppearance.BorderSize = 0;
             this.btnSalar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnSalar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -236,6 +243,7 @@
             // btnEditar
             // 
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.Enabled = false;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -249,6 +257,7 @@
             // btnDeletar
             // 
             this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletar.Enabled = false;
             this.btnDeletar.FlatAppearance.BorderSize = 0;
             this.btnDeletar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
