@@ -30,26 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFuncionarios));
             this.label1 = new System.Windows.Forms.Label();
-            this.TxtBuscar = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscarNome = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.txtTel = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cbCargo = new System.Windows.Forms.ComboBox();
+            this.grid = new System.Windows.Forms.DataGridView();
+            this.txtBuscarCPF = new System.Windows.Forms.MaskedTextBox();
+            this.rbNome = new System.Windows.Forms.RadioButton();
+            this.rbCPF = new System.Windows.Forms.RadioButton();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.btnSalar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnDeletar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,20 +63,20 @@
             this.label1.Text = "Buscar:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // TxtBuscar
+            // txtBuscarNome
             // 
-            this.TxtBuscar.Location = new System.Drawing.Point(531, 12);
-            this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(149, 20);
-            this.TxtBuscar.TabIndex = 50;
-            this.TxtBuscar.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
+            this.txtBuscarNome.Location = new System.Drawing.Point(531, 12);
+            this.txtBuscarNome.Name = "txtBuscarNome";
+            this.txtBuscarNome.Size = new System.Drawing.Size(149, 20);
+            this.txtBuscarNome.TabIndex = 50;
+            this.txtBuscarNome.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtNome.Location = new System.Drawing.Point(79, 96);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(149, 20);
+            this.txtNome.TabIndex = 1;
             // 
             // label2
             // 
@@ -98,12 +98,12 @@
             this.label3.TabIndex = 53;
             this.label3.Text = "CPF:";
             // 
-            // textBox3
+            // txtEndereco
             // 
-            this.textBox3.Location = new System.Drawing.Point(531, 96);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(149, 20);
-            this.textBox3.TabIndex = 54;
+            this.txtEndereco.Location = new System.Drawing.Point(531, 96);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(149, 20);
+            this.txtEndereco.TabIndex = 54;
             // 
             // label4
             // 
@@ -115,21 +115,21 @@
             this.label4.TabIndex = 55;
             this.label4.Text = "Endereço:";
             // 
-            // maskedTextBox1
+            // txtCPF
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(313, 96);
-            this.maskedTextBox1.Mask = "000,000,000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(98, 20);
-            this.maskedTextBox1.TabIndex = 2;
+            this.txtCPF.Location = new System.Drawing.Point(313, 96);
+            this.txtCPF.Mask = "000,000,000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(98, 20);
+            this.txtCPF.TabIndex = 2;
             // 
-            // maskedTextBox2
+            // txtTel
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(79, 157);
-            this.maskedTextBox2.Mask = "(99) 00000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(98, 20);
-            this.maskedTextBox2.TabIndex = 56;
+            this.txtTel.Location = new System.Drawing.Point(79, 157);
+            this.txtTel.Mask = "(99) 00000-0000";
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(98, 20);
+            this.txtTel.TabIndex = 56;
             // 
             // label5
             // 
@@ -151,113 +151,113 @@
             this.label6.TabIndex = 59;
             this.label6.Text = "Cargo:";
             // 
-            // comboBox1
+            // cbCargo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbCargo.FormattingEnabled = true;
+            this.cbCargo.Items.AddRange(new object[] {
             "Camareiro(a)",
             "Garçon",
             "Auxiliar Administrativo",
             "Cordenador(a)"});
-            this.comboBox1.Location = new System.Drawing.Point(313, 160);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(98, 21);
-            this.comboBox1.TabIndex = 60;
+            this.cbCargo.Location = new System.Drawing.Point(313, 160);
+            this.cbCargo.Name = "cbCargo";
+            this.cbCargo.Size = new System.Drawing.Size(98, 21);
+            this.cbCargo.TabIndex = 60;
             // 
-            // dataGridView1
+            // grid
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 221);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(695, 191);
-            this.dataGridView1.TabIndex = 61;
+            this.grid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid.GridColor = System.Drawing.SystemColors.Control;
+            this.grid.Location = new System.Drawing.Point(38, 221);
+            this.grid.Name = "grid";
+            this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grid.Size = new System.Drawing.Size(695, 191);
+            this.grid.TabIndex = 61;
             // 
-            // maskedTextBox3
+            // txtBuscarCPF
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(531, 53);
-            this.maskedTextBox3.Mask = "000,000,000-00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(149, 20);
-            this.maskedTextBox3.TabIndex = 62;
+            this.txtBuscarCPF.Location = new System.Drawing.Point(531, 53);
+            this.txtBuscarCPF.Mask = "000,000,000-00";
+            this.txtBuscarCPF.Name = "txtBuscarCPF";
+            this.txtBuscarCPF.Size = new System.Drawing.Size(149, 20);
+            this.txtBuscarCPF.TabIndex = 62;
             // 
-            // radioButton1
+            // rbNome
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton1.Location = new System.Drawing.Point(346, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(53, 17);
-            this.radioButton1.TabIndex = 63;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nome";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbNome.AutoSize = true;
+            this.rbNome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rbNome.Location = new System.Drawing.Point(346, 19);
+            this.rbNome.Name = "rbNome";
+            this.rbNome.Size = new System.Drawing.Size(53, 17);
+            this.rbNome.TabIndex = 63;
+            this.rbNome.TabStop = true;
+            this.rbNome.Text = "Nome";
+            this.rbNome.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbCPF
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton2.Location = new System.Drawing.Point(420, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 17);
-            this.radioButton2.TabIndex = 64;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "CPF";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbCPF.AutoSize = true;
+            this.rbCPF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rbCPF.Location = new System.Drawing.Point(420, 19);
+            this.rbCPF.Name = "rbCPF";
+            this.rbCPF.Size = new System.Drawing.Size(45, 17);
+            this.rbCPF.TabIndex = 64;
+            this.rbCPF.TabStop = true;
+            this.rbCPF.Text = "CPF";
+            this.rbCPF.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnNovo
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(193, 441);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 65);
-            this.button1.TabIndex = 65;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNovo.FlatAppearance.BorderSize = 0;
+            this.btnNovo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
+            this.btnNovo.Location = new System.Drawing.Point(193, 441);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(70, 65);
+            this.btnNovo.TabIndex = 65;
+            this.btnNovo.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSalar
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(289, 441);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 65);
-            this.button2.TabIndex = 66;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSalar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalar.FlatAppearance.BorderSize = 0;
+            this.btnSalar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btnSalar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalar.Image")));
+            this.btnSalar.Location = new System.Drawing.Point(289, 441);
+            this.btnSalar.Name = "btnSalar";
+            this.btnSalar.Size = new System.Drawing.Size(70, 65);
+            this.btnSalar.TabIndex = 66;
+            this.btnSalar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEditar
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(386, 441);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 65);
-            this.button3.TabIndex = 67;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.Location = new System.Drawing.Point(386, 441);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(70, 65);
+            this.btnEditar.TabIndex = 67;
+            this.btnEditar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnDeletar
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(481, 441);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(70, 65);
-            this.button4.TabIndex = 68;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletar.FlatAppearance.BorderSize = 0;
+            this.btnDeletar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeletar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletar.Image")));
+            this.btnDeletar.Location = new System.Drawing.Point(481, 441);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(70, 65);
+            this.btnDeletar.TabIndex = 68;
+            this.btnDeletar.UseVisualStyleBackColor = true;
             // 
             // FrmFuncionarios
             // 
@@ -265,25 +265,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(778, 550);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnDeletar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnSalar);
+            this.Controls.Add(this.btnNovo);
+            this.Controls.Add(this.rbCPF);
+            this.Controls.Add(this.rbNome);
+            this.Controls.Add(this.txtBuscarCPF);
+            this.Controls.Add(this.grid);
+            this.Controls.Add(this.cbCargo);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.txtTel);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCPF);
+            this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TxtBuscar);
+            this.Controls.Add(this.txtBuscarNome);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -291,7 +291,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela de Funcionarios";
             this.Load += new System.EventHandler(this.FrmFuncionarios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,24 +300,24 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtBuscar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscarNome;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox txtCPF;
+        private System.Windows.Forms.MaskedTextBox txtTel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox cbCargo;
+        private System.Windows.Forms.DataGridView grid;
+        private System.Windows.Forms.MaskedTextBox txtBuscarCPF;
+        private System.Windows.Forms.RadioButton rbNome;
+        private System.Windows.Forms.RadioButton rbCPF;
+        private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.Button btnSalar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }
