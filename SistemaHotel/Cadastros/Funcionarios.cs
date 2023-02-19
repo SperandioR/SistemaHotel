@@ -36,7 +36,7 @@ namespace SistemaHotel.Cadastros
             cbCargo.Enabled = false;
 
         }
-        //Metodo para limpar o texto de cada campo.
+        //Metodo para limpar o texto de cada campo.Enabled
         private void limparCampos()
         {
             txtNome.Text = " ";
@@ -59,6 +59,19 @@ namespace SistemaHotel.Cadastros
         {
 
         }
+        //alterando a visibilidade e o modo habilitado do campo txtBuscarCpf invisivel.
+        private void rbNome_CheckedChanged(object sender, EventArgs e)
+        {
+            txtBuscarNome.Visible = true;
+            txtBuscarCPF.Visible = false;
 
+            txtBuscarNome.Text = " ";
+        }
+
+        private void rbCPF_CheckedChanged(object sender, EventArgs e)
+        {
+            txtBuscarNome.Visible = false;
+            txtBuscarCPF.Visible = true;
+        }
     }
 }

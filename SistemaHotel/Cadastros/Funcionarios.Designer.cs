@@ -182,12 +182,12 @@
             // 
             // txtBuscarCPF
             // 
-            this.txtBuscarCPF.Enabled = false;
             this.txtBuscarCPF.Location = new System.Drawing.Point(531, 53);
             this.txtBuscarCPF.Mask = "000,000,000-00";
             this.txtBuscarCPF.Name = "txtBuscarCPF";
             this.txtBuscarCPF.Size = new System.Drawing.Size(149, 20);
             this.txtBuscarCPF.TabIndex = 62;
+            this.txtBuscarCPF.Visible = false;
             // 
             // rbNome
             // 
@@ -200,6 +200,7 @@
             this.rbNome.TabStop = true;
             this.rbNome.Text = "Nome";
             this.rbNome.UseVisualStyleBackColor = true;
+            this.rbNome.CheckedChanged += new System.EventHandler(this.rbNome_CheckedChanged);
             // 
             // rbCPF
             // 
@@ -212,6 +213,7 @@
             this.rbCPF.TabStop = true;
             this.rbCPF.Text = "CPF";
             this.rbCPF.UseVisualStyleBackColor = true;
+            this.rbCPF.CheckedChanged += new System.EventHandler(this.rbCPF_CheckedChanged);
             // 
             // btnNovo
             // 
