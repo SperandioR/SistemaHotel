@@ -49,16 +49,7 @@ namespace SistemaHotel.Cadastros
         {
             rbNome.Checked = true; //criando uma propriedade checked: Ao abrir O Menu Funcionários automaticamente o rbNome ficará ativado.
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtBuscar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+                        
         //alterando a visibilidade e o modo habilitado do campo txtBuscarCpf invisivel ao selecionar o rbNome.
         private void rbNome_CheckedChanged(object sender, EventArgs e)
         {
@@ -73,6 +64,12 @@ namespace SistemaHotel.Cadastros
         {
             txtBuscarNome.Visible = false;
             txtBuscarCPF.Visible = true;
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            habilitarCampos();// criando uma chamada do Metodo: HabilitarCampos
+            btnSalvar.Enabled = true;//o botão de salvar também ficará habilitado
         }
     }
 }

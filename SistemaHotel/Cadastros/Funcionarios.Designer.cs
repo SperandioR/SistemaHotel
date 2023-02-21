@@ -46,7 +46,7 @@
             this.rbNome = new System.Windows.Forms.RadioButton();
             this.rbCPF = new System.Windows.Forms.RadioButton();
             this.btnNovo = new System.Windows.Forms.Button();
-            this.btnSalar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -61,7 +61,6 @@
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtBuscarNome
             // 
@@ -69,7 +68,6 @@
             this.txtBuscarNome.Name = "txtBuscarNome";
             this.txtBuscarNome.Size = new System.Drawing.Size(149, 20);
             this.txtBuscarNome.TabIndex = 50;
-            this.txtBuscarNome.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
             // 
             // txtNome
             // 
@@ -229,19 +227,19 @@
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
-            // btnSalar
+            // btnSalvar
             // 
-            this.btnSalar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalar.Enabled = false;
-            this.btnSalar.FlatAppearance.BorderSize = 0;
-            this.btnSalar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.btnSalar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalar.Image")));
-            this.btnSalar.Location = new System.Drawing.Point(289, 441);
-            this.btnSalar.Name = "btnSalar";
-            this.btnSalar.Size = new System.Drawing.Size(70, 65);
-            this.btnSalar.TabIndex = 66;
-            this.btnSalar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.Enabled = false;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
+            this.btnSalvar.Location = new System.Drawing.Point(289, 441);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(70, 65);
+            this.btnSalvar.TabIndex = 66;
+            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // btnEditar
             // 
@@ -279,7 +277,7 @@
             this.ClientSize = new System.Drawing.Size(778, 550);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnSalar);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.rbCPF);
             this.Controls.Add(this.rbNome);
@@ -328,7 +326,7 @@
         private System.Windows.Forms.RadioButton rbNome;
         private System.Windows.Forms.RadioButton rbCPF;
         private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.Button btnSalar;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnDeletar;
     }
