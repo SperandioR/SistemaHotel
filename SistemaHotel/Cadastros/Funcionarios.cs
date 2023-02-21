@@ -36,7 +36,7 @@ namespace SistemaHotel.Cadastros
             cbCargo.Enabled = false;
 
         }
-        //Metodo para limpar o texto de cada campo.Enabled
+        //Metodo para limpar o texto de cada campo: Enabled
         private void limparCampos()
         {
             txtNome.Text = " ";
@@ -47,7 +47,7 @@ namespace SistemaHotel.Cadastros
         //Eventos
         private void FrmFuncionarios_Load(object sender, EventArgs e)
         {
-            rbNome.Checked = true; //criando uma propriedade checked.
+            rbNome.Checked = true; //criando uma propriedade checked: Ao abrir O Menu Funcionários automaticamente o rbNome ficará ativado.
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -59,15 +59,16 @@ namespace SistemaHotel.Cadastros
         {
 
         }
-        //alterando a visibilidade e o modo habilitado do campo txtBuscarCpf invisivel.
+        //alterando a visibilidade e o modo habilitado do campo txtBuscarCpf invisivel ao selecionar o rbNome.
         private void rbNome_CheckedChanged(object sender, EventArgs e)
         {
             txtBuscarNome.Visible = true;
             txtBuscarCPF.Visible = false;
 
-            txtBuscarNome.Text = " ";
+            txtBuscarNome.Text = " ";//desse modo os campos ficaram no modo string:representa palavras,frases ou textos
+            txtBuscarCPF.Text = " ";    
         }
-
+        //Ao selecionar o campo rbCPF o campo txtBsucarNome ficará visil e o txtBuscarCPF ficará invisivel.
         private void rbCPF_CheckedChanged(object sender, EventArgs e)
         {
             txtBuscarNome.Visible = false;
