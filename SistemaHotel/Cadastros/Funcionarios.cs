@@ -49,7 +49,7 @@ namespace SistemaHotel.Cadastros
         {
             rbNome.Checked = true; //criando uma propriedade checked: Ao abrir O Menu Funcionários automaticamente o rbNome ficará ativado.
         }
-                        
+
         //alterando a visibilidade e o modo habilitado do campo txtBuscarCpf invisivel ao selecionar o rbNome.
         private void rbNome_CheckedChanged(object sender, EventArgs e)
         {
@@ -57,7 +57,7 @@ namespace SistemaHotel.Cadastros
             txtBuscarCPF.Visible = false;
 
             txtBuscarNome.Text = " ";//desse modo os campos ficaram no modo string:representa palavras,frases ou textos
-            txtBuscarCPF.Text = " ";    
+            txtBuscarCPF.Text = " ";
         }
         //Ao selecionar o campo rbCPF o campo txtBsucarNome ficará visil e o txtBuscarCPF ficará invisivel.
         private void rbCPF_CheckedChanged(object sender, EventArgs e)
@@ -70,6 +70,23 @@ namespace SistemaHotel.Cadastros
         {
             habilitarCampos();// criando uma chamada do Metodo: HabilitarCampos
             btnSalvar.Enabled = true;//o botão de salvar também ficará habilitado
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if (txtNome.Text == "") //aplicando uma condicional caso o campo txtNome estiver vazio.
+            {
+                MessageBox.Show("Preencha o Nome");  // caixa de msg
+                txtNome.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
+                return;
+            }
+
+            if (txtCPF.Text == "") //aplicando uma condicional caso o campo txtCPF não esteja preenchido.
+            {
+                MessageBox.Show("Preencha o CPF");  // caixa de msg
+                txtCPF.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
+                return;
+            }
         }
     }
 }
