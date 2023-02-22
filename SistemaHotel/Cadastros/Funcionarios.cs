@@ -81,7 +81,7 @@ namespace SistemaHotel.Cadastros
                 return;
             }
 
-            if (txtCPF.Text == "") //aplicando uma condicional caso o campo txtCPF não esteja preenchido.
+            if (txtCPF.Text == "   .   .   -") //aplicando uma condicional caso o campo txtCPF não esteja preenchido.
             {
                 MessageBox.Show("Preencha o CPF");  // caixa de msg
                 txtCPF.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
