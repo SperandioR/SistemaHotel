@@ -16,6 +16,7 @@ namespace SistemaHotel
         {
             InitializeComponent();
         }
+        //Eventos
         //Rendimensionando o menu 
         private void FrmMenu_Resize(object sender, EventArgs e)
         {

@@ -41,16 +41,18 @@ namespace SistemaHotel
         //criando um novo método de chamada ao apertar a tecla Enter.
         private void ChamarLogin()
         {
-            if (txtUsuario.Text == "") //aplicando uma condicional
+            if (txtUsuario.Text.ToString().Trim() == "") //aplicando uma condicional, convertendo o campo em uma string e Trim() remove todos os caracteres de espaço em branco à esquerda e à direita da cadeia de caracteres atual.
             {
                 MessageBox.Show("Preencha o Usuário");  // caixa de msg
+                txtUsuario.Text = ""; //limpa o campo voltando o cursor para o  inicio.
                 txtUsuario.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
 
-            if (txtSenha.Text == "") //aplicando uma condicional
+            if (txtSenha.Text.ToString().Trim() == "") //aplicando uma condicional
             {
                 MessageBox.Show("Preencha a Senha");  // caixa de msg
+                txtSenha.Text = "";///
                 txtSenha.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }

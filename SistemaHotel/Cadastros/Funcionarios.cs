@@ -74,16 +74,17 @@ namespace SistemaHotel.Cadastros
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (txtNome.Text == "") //aplicando uma condicional caso o campo txtNome estiver vazio.
+            if (txtNome.Text.ToString().Trim() == "") //aplicando uma condicional, convertendo o campo em uma string, e Trim()-remove todos os caracteres de espaço em branco à esquerda e à direita da cadeia de caracteres atual.
             {
-                MessageBox.Show("Preencha o Nome");  // caixa de msg
+                txtNome.Text = ""; //limpa o campo voltando o cursor para o inicio.
+                MessageBox.Show("Preencha o Nome");  // msg de aviso.
                 txtNome.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
 
-            if (txtCPF.Text == "   .   .   -") //aplicando uma condicional caso o campo txtCPF não esteja preenchido.
+            if (txtCPF.Text == "   .   .   -")
             {
-                MessageBox.Show("Preencha o CPF");  // caixa de msg
+                MessageBox.Show("Preencha o CPF");  // msg de aviso.
                 txtCPF.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }

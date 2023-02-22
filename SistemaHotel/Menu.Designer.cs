@@ -81,6 +81,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlTopo.SuspendLayout();
             this.pnlRight.SuspendLayout();
@@ -112,7 +113,8 @@
             this.hópedesToolStripMenuItem,
             this.quartosToolStripMenuItem,
             this.usuáriosToolStripMenuItem,
-            this.serviçosToolStripMenuItem});
+            this.serviçosToolStripMenuItem,
+            this.cargosToolStripMenuItem});
             this.MenuCadastro.Image = ((System.Drawing.Image)(resources.GetObject("MenuCadastro.Image")));
             this.MenuCadastro.Name = "MenuCadastro";
             this.MenuCadastro.Size = new System.Drawing.Size(87, 20);
@@ -162,13 +164,13 @@
             // novoProdutoToolStripMenuItem
             // 
             this.novoProdutoToolStripMenuItem.Name = "novoProdutoToolStripMenuItem";
-            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoProdutoToolStripMenuItem.Text = "Novo Produto";
             // 
             // estoqueToolStripMenuItem
             // 
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             // 
             // MenuMovimentacoes
@@ -617,6 +619,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "13:00:00";
             // 
+            // cargosToolStripMenuItem
+            // 
+            this.cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
+            this.cargosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cargosToolStripMenuItem.Text = "Cargos";
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -700,5 +708,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem;
     }
 }
