@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadastros\Cargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Cargo.Designer.cs">
+      <DependentUpon>Cargo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastros\Funcionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cadastros\Cargo.resx">
+      <DependentUpon>Cargo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\Funcionarios.resx">
       <DependentUpon>Funcionarios.cs</DependentUpon>
     </EmbeddedResource>
