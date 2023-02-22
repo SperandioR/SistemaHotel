@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaHotel.Cadastros
 {
-    public partial class frmCargo : Form
+    public partial class FrmCargos : Form
     {
-        public frmCargo()
+        public FrmCargos()
         {
             InitializeComponent();
         }
