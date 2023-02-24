@@ -70,6 +70,7 @@ namespace SistemaHotel.Cadastros
         {
             habilitarCampos();// criando uma chamada do Metodo: HabilitarCampos
             btnSalvar.Enabled = true;//o botão de salvar também ficará habilitado
+            btnNovo.Enabled = false;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -88,6 +89,10 @@ namespace SistemaHotel.Cadastros
                 txtCPF.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
+
+            //CÓDIGO DO BOTÃO PARA SALVAR.
+
+            btnNovo.Enabled = true;
         }
     }
 }

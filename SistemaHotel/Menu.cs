@@ -39,5 +39,11 @@ namespace SistemaHotel
             Cadastros.FrmFuncionarios form = new Cadastros.FrmFuncionarios();
             form.Show(); //abrir o formulário de funcionários.
         }
+
+        private void cargosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastros.FrmCargos form = new Cadastros.FrmCargos();
+            form.Show(); //abrir o formulário de Cargos.
+        }
     }
 }
