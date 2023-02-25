@@ -25,6 +25,7 @@ namespace SistemaHotel.Cadastros
             txtTel.Enabled = true;
             txtEndereco.Enabled = true;
             cbCargo.Enabled = true;
+            txtNome.Focus(); //Quando habilitar os campos, ao clicar no btnNovo o Focus ficará ativo.
         }
         //Metodo para desabilitar os campos.
         private void desabilitarCampos()

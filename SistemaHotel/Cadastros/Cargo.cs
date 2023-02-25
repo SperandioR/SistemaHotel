@@ -39,6 +39,7 @@ namespace SistemaHotel.Cadastros
             btnSalvar.Enabled = false;
             txtNome.Text = "";
             txtNome.Enabled = false;
+            txtNome.Focus();
 
         }
     }
