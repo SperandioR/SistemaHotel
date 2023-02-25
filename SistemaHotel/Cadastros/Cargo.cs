@@ -20,7 +20,7 @@ namespace SistemaHotel.Cadastros
         private void btnNovo_Click(object sender, EventArgs e)
         {
             txtNome.Enabled = true; //Criando "METODO" para habilitar os campos txtNome e btnSalvar o clicar no btnNovo.
-            btnSalvar.Enabled = true;  
+            btnSalvar.Enabled = true;
             btnNovo.Enabled = false;
         }
         //Evento btnSalvar
@@ -33,8 +33,13 @@ namespace SistemaHotel.Cadastros
                 txtNome.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
-
+            //MSG confirmando que o registro foi salvo.
+            MessageBox.Show("Registro Salvo com Sucesso!");
             btnNovo.Enabled = true;
+            btnSalvar.Enabled = false;
+            txtNome.Text = "";
+            txtNome.Enabled = false;
+
         }
     }
 }

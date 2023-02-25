@@ -92,7 +92,11 @@ namespace SistemaHotel.Cadastros
 
             //CÓDIGO DO BOTÃO PARA SALVAR.
 
+            MessageBox.Show("Registro Salvo com Sucesso!");
             btnNovo.Enabled = true;
+            btnSalvar.Enabled = false;
+            limparCampos();//metodo para limpar todos os campos.
+            desabilitarCampos();
         }
     }
 }
