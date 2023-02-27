@@ -79,21 +79,21 @@ namespace SistemaHotel.Cadastros
             if (txtNome.Text.ToString().Trim() == "") //aplicando uma condicional, convertendo o campo em uma string, e Trim()-remove todos os caracteres de espaço em branco à esquerda e à direita da cadeia de caracteres atual.
             {
                 txtNome.Text = ""; //limpa o campo voltando o cursor para o inicio.
-                MessageBox.Show("Preencha o Nome");  // msg de aviso.
+                MessageBox.Show("Preencha o Nome", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
                 txtNome.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
 
             if (txtCPF.Text == "   .   .   -")
             {
-                MessageBox.Show("Preencha o CPF");  // msg de aviso.
+                MessageBox.Show("Preencha o CPF", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
                 txtCPF.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
             }
 
             //CÓDIGO DO BOTÃO PARA SALVAR.
 
-            MessageBox.Show("Registro Salvo com Sucesso!");
+            MessageBox.Show("Registro Salvo com Sucesso", "Dados Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
             btnNovo.Enabled = true;
             btnSalvar.Enabled = false;
             limparCampos();//metodo para limpar todos os campos.

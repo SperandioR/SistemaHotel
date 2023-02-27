@@ -43,7 +43,7 @@ namespace SistemaHotel
         {
             if (txtUsuario.Text.ToString().Trim() == "") //aplicando uma condicional, convertendo o campo em uma string e Trim() remove todos os caracteres de espaço em branco à esquerda e à direita da cadeia de caracteres atual.
             {
-                MessageBox.Show("Preencha o Usuário");  // caixa de msg
+                MessageBox.Show("Preencha o Usuário", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg (1°Texto,2°titulo,3° Estilo da janela, 3°Icone)
                 txtUsuario.Text = ""; //limpa o campo voltando o cursor para o  inicio.
                 txtUsuario.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;
@@ -51,7 +51,7 @@ namespace SistemaHotel
 
             if (txtSenha.Text.ToString().Trim() == "") //aplicando uma condicional
             {
-                MessageBox.Show("Preencha a Senha");  // caixa de msg
+                MessageBox.Show("Preencha a Senha", "Campo vazio",MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg (1°Texto,2°titulo,3° Estilo da janela, 3°Icone)
                 txtSenha.Text = "";///
                 txtSenha.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
                 return;

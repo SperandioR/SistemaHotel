@@ -123,7 +123,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 77;
-            this.label2.Text = "Nome:";
+            this.label2.Text = "Cargo:";
             // 
             // FrmCargos
             // 
