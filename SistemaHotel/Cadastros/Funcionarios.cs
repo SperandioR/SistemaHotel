@@ -99,5 +99,38 @@ namespace SistemaHotel.Cadastros
             limparCampos();//metodo para limpar todos os campos.
             desabilitarCampos();
         }
+        //Evento "click" no DataGrind(grind) do FrmFormulario.
+        private void grid_Click(object sender, EventArgs e)
+        {
+            btnEditar.Enabled = true;   //metodo 
+            btnDeletar.Enabled = true;  
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (txtNome.Text.ToString().Trim() == "") //aplicando uma condicional, convertendo o campo em uma string, e Trim()-remove todos os caracteres de espaço em branco à esquerda e à direita da cadeia de caracteres atual.
+            {
+                txtNome.Text = ""; //limpa o campo voltando o cursor para o inicio.
+                MessageBox.Show("Preencha o Nome", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
+                txtNome.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
+                return;
+            }
+
+            if (txtCPF.Text == "   .   .   -")
+            {
+                MessageBox.Show("Preencha o CPF", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
+                txtCPF.Focus(); //aplicando a propriedade Focus o usuário volta a receber o cursor do mouse.
+                return;
+            }
+
+            //CÓDIGO DO BOTÃO PARA EDITAR.
+
+            MessageBox.Show("Registro Editado com Sucesso", "Dados Editados", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
+            btnNovo.Enabled = true;
+            btnEditar.Enabled = false;
+            btnDeletar.Enabled = false;
+            limparCampos();//chamada para limpar todos os campos.
+            desabilitarCampos();//chamada para desabilitar todos os campos.
+        }
     }
 }

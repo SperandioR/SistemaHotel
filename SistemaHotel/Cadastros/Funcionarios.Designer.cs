@@ -177,6 +177,7 @@
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid.Size = new System.Drawing.Size(695, 191);
             this.grid.TabIndex = 61;
+            this.grid.Click += new System.EventHandler(this.grid_Click);
             // 
             // txtBuscarCPF
             // 
@@ -255,6 +256,7 @@
             this.btnEditar.Size = new System.Drawing.Size(70, 65);
             this.btnEditar.TabIndex = 67;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnDeletar
             // 
