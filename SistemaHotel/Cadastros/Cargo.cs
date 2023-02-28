@@ -76,7 +76,7 @@ namespace SistemaHotel.Cadastros
         //Evento do botão deletar 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            var resultado = MessageBox.Show("Deseja Realmente Deletar o Registro?", "Excluir Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);  // caixa de msg (1°Texto,2°titulo,3° Estilo da janela, 3°Icone)
+            var resultado = MessageBox.Show("Deseja Realmente Deletar o Registro?", "Excluir Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);  // Metodo caixa de msg (1°Texto,2°titulo,3° Estilo da janela, 3°Icone)
             if (resultado == DialogResult.Yes)
             {
                 if (resultado == DialogResult.Yes)
