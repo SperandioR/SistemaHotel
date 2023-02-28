@@ -72,6 +72,8 @@ namespace SistemaHotel.Cadastros
             habilitarCampos();// criando uma chamada do Metodo: HabilitarCampos
             btnSalvar.Enabled = true;//o botão de salvar também ficará habilitado
             btnNovo.Enabled = false;
+            btnEditar.Enabled = false;
+            btnDeletar.Enabled = false;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -102,8 +104,9 @@ namespace SistemaHotel.Cadastros
         //Evento "click" no DataGrind(grind) do FrmFormulario.
         private void grid_Click(object sender, EventArgs e)
         {
-            btnEditar.Enabled = true;   //metodo 
-            btnDeletar.Enabled = true;  
+            btnEditar.Enabled = true;   
+            btnDeletar.Enabled = true;
+            btnSalvar.Enabled = false;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

@@ -52,6 +52,7 @@
             this.btnDeletar.Size = new System.Drawing.Size(70, 65);
             this.btnDeletar.TabIndex = 76;
             this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // btnEditar
             // 
@@ -66,6 +67,7 @@
             this.btnEditar.Size = new System.Drawing.Size(70, 65);
             this.btnEditar.TabIndex = 75;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnSalvar
             // 
@@ -106,6 +108,7 @@
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid.Size = new System.Drawing.Size(312, 328);
             this.grid.TabIndex = 72;
+            this.grid.Click += new System.EventHandler(this.grid_Click);
             // 
             // txtNome
             // 
