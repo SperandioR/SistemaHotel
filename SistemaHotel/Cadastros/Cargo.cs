@@ -79,17 +79,16 @@ namespace SistemaHotel.Cadastros
             var resultado = MessageBox.Show("Deseja Realmente Deletar o Registro?", "Excluir Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);  // Metodo caixa de msg (1°Texto,2°titulo,3° Estilo da janela, 3°Icone)
             if (resultado == DialogResult.Yes)
             {
-                if (resultado == DialogResult.Yes)
-                {
-                    //CÓDIGO DO BOTÃO DE DELETAR.
 
-                    MessageBox.Show("Registro Deletado com Sucesso", "Registro Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
-                    btnNovo.Enabled = true;
-                    btnEditar.Enabled = false;
-                    btnDeletar.Enabled = false;
-                    txtNome.Text = "";
-                    txtNome.Enabled = false;
-                }
+                //CÓDIGO DO BOTÃO DE DELETAR.
+
+                MessageBox.Show("Registro Deletado com Sucesso", "Registro Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
+                btnNovo.Enabled = true;
+                btnEditar.Enabled = false;
+                btnDeletar.Enabled = false;
+                txtNome.Text = "";
+                txtNome.Enabled = false;
+
             }
 
         }

@@ -271,6 +271,7 @@
             this.btnDeletar.Size = new System.Drawing.Size(70, 65);
             this.btnDeletar.TabIndex = 68;
             this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // FrmFuncionarios
             // 

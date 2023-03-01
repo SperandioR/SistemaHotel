@@ -104,7 +104,7 @@ namespace SistemaHotel.Cadastros
         //Evento "click" no DataGrind(grind) do FrmFormulario.
         private void grid_Click(object sender, EventArgs e)
         {
-            btnEditar.Enabled = true;   
+            btnEditar.Enabled = true;
             btnDeletar.Enabled = true;
             btnSalvar.Enabled = false;
         }
@@ -134,6 +134,24 @@ namespace SistemaHotel.Cadastros
             btnDeletar.Enabled = false;
             limparCampos();//chamada para limpar todos os campos.
             desabilitarCampos();//chamada para desabilitar todos os campos.
+        }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            var resultado = MessageBox.Show("Deseja Realmente Deletar o Registro?", "Excluir Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);  // Metodo caixa de msg (1°Texto,2°titulo,3° Estilo da janela, 3°Icone)
+            if (resultado == DialogResult.Yes)
+            {
+                                
+                    //CÓDIGO DO BOTÃO DE DELETAR.
+
+                    MessageBox.Show("Registro Deletado com Sucesso", "Registro Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
+                    btnNovo.Enabled = true;
+                    btnEditar.Enabled = false;
+                    btnDeletar.Enabled = false;
+                    txtNome.Text = "";
+                    txtNome.Enabled = false;
+                
+            }
         }
     }
 }
