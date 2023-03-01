@@ -81,7 +81,14 @@ namespace SistemaHotel.Cadastros
             {
                 if (resultado == DialogResult.Yes)
                 {
-                    MessageBox.Show("Clicou em sim");
+                    //CÓDIGO DO BOTÃO DE DELETAR.
+
+                    MessageBox.Show("Registro Deletado com Sucesso", "Registro Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
+                    btnNovo.Enabled = true;
+                    btnEditar.Enabled = false;
+                    btnDeletar.Enabled = false;
+                    txtNome.Text = "";
+                    txtNome.Enabled = false;
                 }
             }
 
