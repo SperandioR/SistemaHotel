@@ -34,19 +34,22 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.grid = new System.Windows.Forms.DataGridView();
-            this.cbCargo = new System.Windows.Forms.ComboBox();
+            this.cbFornecedor = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBuscarNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEstoque = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.img = new System.Windows.Forms.PictureBox();
+            this.btnImagem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDeletar
@@ -57,9 +60,9 @@
             this.btnDeletar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeletar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletar.Image")));
-            this.btnDeletar.Location = new System.Drawing.Point(478, 417);
+            this.btnDeletar.Location = new System.Drawing.Point(519, 419);
             this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(70, 65);
+            this.btnDeletar.Size = new System.Drawing.Size(64, 65);
             this.btnDeletar.TabIndex = 88;
             this.btnDeletar.UseVisualStyleBackColor = true;
             // 
@@ -71,9 +74,9 @@
             this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.Location = new System.Drawing.Point(383, 417);
+            this.btnEditar.Location = new System.Drawing.Point(424, 419);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(70, 65);
+            this.btnEditar.Size = new System.Drawing.Size(64, 65);
             this.btnEditar.TabIndex = 87;
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
@@ -85,9 +88,9 @@
             this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
-            this.btnSalvar.Location = new System.Drawing.Point(286, 417);
+            this.btnSalvar.Location = new System.Drawing.Point(327, 419);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(70, 65);
+            this.btnSalvar.Size = new System.Drawing.Size(64, 65);
             this.btnSalvar.TabIndex = 86;
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
@@ -98,9 +101,9 @@
             this.btnNovo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
-            this.btnNovo.Location = new System.Drawing.Point(190, 417);
+            this.btnNovo.Location = new System.Drawing.Point(231, 419);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(70, 65);
+            this.btnNovo.Size = new System.Drawing.Size(64, 65);
             this.btnNovo.TabIndex = 85;
             this.btnNovo.UseVisualStyleBackColor = true;
             // 
@@ -112,22 +115,22 @@
             this.grid.Location = new System.Drawing.Point(35, 197);
             this.grid.Name = "grid";
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid.Size = new System.Drawing.Size(695, 191);
+            this.grid.Size = new System.Drawing.Size(765, 191);
             this.grid.TabIndex = 81;
             // 
-            // cbCargo
+            // cbFornecedor
             // 
-            this.cbCargo.Enabled = false;
-            this.cbCargo.FormattingEnabled = true;
-            this.cbCargo.Items.AddRange(new object[] {
+            this.cbFornecedor.Enabled = false;
+            this.cbFornecedor.FormattingEnabled = true;
+            this.cbFornecedor.Items.AddRange(new object[] {
             "Camareiro(a)",
             "Garçon",
             "Auxiliar Administrativo",
             "Cordenador(a)"});
-            this.cbCargo.Location = new System.Drawing.Point(310, 132);
-            this.cbCargo.Name = "cbCargo";
-            this.cbCargo.Size = new System.Drawing.Size(98, 21);
-            this.cbCargo.TabIndex = 74;
+            this.cbFornecedor.Location = new System.Drawing.Point(310, 132);
+            this.cbFornecedor.Name = "cbFornecedor";
+            this.cbFornecedor.Size = new System.Drawing.Size(98, 21);
+            this.cbFornecedor.TabIndex = 74;
             // 
             // label6
             // 
@@ -149,19 +152,19 @@
             this.label5.TabIndex = 79;
             this.label5.Text = "Estoque:";
             // 
-            // txtEndereco
+            // txtValor
             // 
-            this.txtEndereco.Enabled = false;
-            this.txtEndereco.Location = new System.Drawing.Point(528, 72);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(149, 20);
-            this.txtEndereco.TabIndex = 72;
+            this.txtValor.Enabled = false;
+            this.txtValor.Location = new System.Drawing.Point(478, 136);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(124, 20);
+            this.txtValor.TabIndex = 72;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(488, 75);
+            this.label4.Location = new System.Drawing.Point(438, 139);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 78;
@@ -182,7 +185,7 @@
             this.txtNome.Enabled = false;
             this.txtNome.Location = new System.Drawing.Point(76, 72);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(149, 20);
+            this.txtNome.Size = new System.Drawing.Size(131, 20);
             this.txtNome.TabIndex = 70;
             // 
             // label2
@@ -197,36 +200,60 @@
             // 
             // txtBuscarNome
             // 
-            this.txtBuscarNome.Location = new System.Drawing.Point(529, 20);
+            this.txtBuscarNome.Location = new System.Drawing.Point(76, 22);
             this.txtBuscarNome.Name = "txtBuscarNome";
-            this.txtBuscarNome.Size = new System.Drawing.Size(149, 20);
+            this.txtBuscarNome.Size = new System.Drawing.Size(131, 20);
             this.txtBuscarNome.TabIndex = 75;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(480, 23);
+            this.label1.Location = new System.Drawing.Point(27, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 69;
             this.label1.Text = "Buscar:";
             // 
-            // textBox1
+            // txtEstoque
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(76, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 20);
-            this.textBox1.TabIndex = 89;
+            this.txtEstoque.Enabled = false;
+            this.txtEstoque.Location = new System.Drawing.Point(76, 133);
+            this.txtEstoque.Name = "txtEstoque";
+            this.txtEstoque.Size = new System.Drawing.Size(131, 20);
+            this.txtEstoque.TabIndex = 89;
             // 
-            // textBox2
+            // txtDescricao
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(310, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(149, 20);
-            this.textBox2.TabIndex = 90;
+            this.txtDescricao.Enabled = false;
+            this.txtDescricao.Location = new System.Drawing.Point(310, 72);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(292, 20);
+            this.txtDescricao.TabIndex = 90;
+            // 
+            // img
+            // 
+            this.img.Location = new System.Drawing.Point(641, 22);
+            this.img.Name = "img";
+            this.img.Size = new System.Drawing.Size(125, 134);
+            this.img.TabIndex = 91;
+            this.img.TabStop = false;
+            // 
+            // btnImagem
+            // 
+            this.btnImagem.BackColor = System.Drawing.Color.Gold;
+            this.btnImagem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImagem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnImagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnImagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImagem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnImagem.Location = new System.Drawing.Point(775, 132);
+            this.btnImagem.Name = "btnImagem";
+            this.btnImagem.Size = new System.Drawing.Size(25, 25);
+            this.btnImagem.TabIndex = 92;
+            this.btnImagem.Text = "+";
+            this.btnImagem.UseVisualStyleBackColor = false;
             // 
             // FrmProtudos
             // 
@@ -234,17 +261,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(844, 532);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnImagem);
+            this.Controls.Add(this.img);
+            this.Controls.Add(this.txtDescricao);
+            this.Controls.Add(this.txtEstoque);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.grid);
-            this.Controls.Add(this.cbCargo);
+            this.Controls.Add(this.cbFornecedor);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtEndereco);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNome);
@@ -257,6 +286,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela de Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,17 +299,19 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.DataGridView grid;
-        private System.Windows.Forms.ComboBox cbCargo;
+        private System.Windows.Forms.ComboBox cbFornecedor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtBuscarNome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEstoque;
+        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.PictureBox img;
+        private System.Windows.Forms.Button btnImagem;
     }
 }
