@@ -45,5 +45,17 @@ namespace SistemaHotel
             Cadastros.FrmCargos form = new Cadastros.FrmCargos();
             form.Show(); //abrir o formulário de Cargos.
         }
+        //Criando evento no Button Produtos, Instanciar e fazer uma chamada no FrmProdutos.
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Produtos.FrmProtudos form = new Produtos.FrmProtudos();
+            form.Show(); //abrir o formulário de Produtos.
+        }
+
+        private void novoProdutoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Produtos.FrmProtudos form = new Produtos.FrmProtudos();
+            form.Show(); //abrir o formulário de Produtos.
+        }
     }
 }
