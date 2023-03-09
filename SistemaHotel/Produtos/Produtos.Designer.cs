@@ -233,9 +233,11 @@
             // 
             // img
             // 
-            this.img.Location = new System.Drawing.Point(641, 22);
+            this.img.Image = ((System.Drawing.Image)(resources.GetObject("img.Image")));
+            this.img.Location = new System.Drawing.Point(634, 22);
             this.img.Name = "img";
-            this.img.Size = new System.Drawing.Size(125, 134);
+            this.img.Size = new System.Drawing.Size(132, 134);
+            this.img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.img.TabIndex = 91;
             this.img.TabStop = false;
             // 
@@ -285,6 +287,7 @@
             this.Name = "FrmProtudos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela de Produtos";
+            this.Load += new System.EventHandler(this.FrmProtudos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img)).EndInit();
             this.ResumeLayout(false);

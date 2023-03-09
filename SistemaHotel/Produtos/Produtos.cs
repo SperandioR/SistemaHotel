@@ -16,5 +16,15 @@ namespace SistemaHotel.Produtos
         {
             InitializeComponent();
         }
+
+        private void Limparfoto()
+        {
+            img.Image = 
+        }
+
+        private void FrmProtudos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
