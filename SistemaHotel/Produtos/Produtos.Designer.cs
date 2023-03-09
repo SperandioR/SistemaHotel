@@ -79,6 +79,7 @@
             this.btnEditar.Size = new System.Drawing.Size(64, 65);
             this.btnEditar.TabIndex = 87;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnSalvar
             // 
@@ -93,6 +94,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(64, 65);
             this.btnSalvar.TabIndex = 86;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnNovo
             // 
@@ -106,6 +108,7 @@
             this.btnNovo.Size = new System.Drawing.Size(64, 65);
             this.btnNovo.TabIndex = 85;
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // grid
             // 
@@ -233,7 +236,6 @@
             // 
             // img
             // 
-            this.img.Image = ((System.Drawing.Image)(resources.GetObject("img.Image")));
             this.img.Location = new System.Drawing.Point(634, 22);
             this.img.Name = "img";
             this.img.Size = new System.Drawing.Size(132, 134);
