@@ -140,6 +140,12 @@ namespace SistemaHotel.Produtos
 
             }
         }
+        //Criando filtros dentro da caixa de dialogos.
+        private void btnImagem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "";
+        }
     }
 }
 

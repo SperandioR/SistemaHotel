@@ -260,6 +260,7 @@
             this.btnImagem.TabIndex = 92;
             this.btnImagem.Text = "+";
             this.btnImagem.UseVisualStyleBackColor = false;
+            this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
             // 
             // FrmProtudos
             // 
