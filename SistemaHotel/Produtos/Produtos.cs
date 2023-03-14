@@ -25,6 +25,7 @@ namespace SistemaHotel.Produtos
             txtValor.Enabled = true;
             txtEstoque.Enabled = true;
             cbFornecedor.Enabled = true;
+            btnImagem.Enabled = true;
             txtNome.Focus(); //Quando habilitar os campos, ao clicar no btnNovo o Focus ficará ativo.
         }
         //Metodo para desabilitar os campos.
@@ -35,6 +36,7 @@ namespace SistemaHotel.Produtos
             txtValor.Enabled = false;
             txtEstoque.Enabled = false;
             cbFornecedor.Enabled = false;
+            btnImagem.Enabled = false;  
 
         }
         //Metodo para limpar o texto de cada campo: Enabled
@@ -119,6 +121,24 @@ namespace SistemaHotel.Produtos
             btnDeletar.Enabled = false;
             limparCampos();//chamada para limpar todos os campos.
             desabilitarCampos();//chamada para desabilitar todos os campos.
+        }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            var resultado = MessageBox.Show("Deseja Realmente Deletar o Registro?", "Excluir Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);  // Metodo caixa de msg (1°Texto,2°titulo,3° Estilo da janela, 3°Icone)
+            if (resultado == DialogResult.Yes)
+            {
+
+                //CÓDIGO DO BOTÃO DE DELETAR.
+
+                MessageBox.Show("Registro Deletado com Sucesso", "Registro Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);  // caixa de msg
+                btnNovo.Enabled = true;
+                btnEditar.Enabled = false;
+                btnDeletar.Enabled = false;
+                txtNome.Text = "";
+                txtNome.Enabled = false;
+
+            }
         }
     }
 }

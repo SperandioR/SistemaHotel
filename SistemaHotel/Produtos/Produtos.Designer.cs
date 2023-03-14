@@ -65,6 +65,7 @@
             this.btnDeletar.Size = new System.Drawing.Size(64, 65);
             this.btnDeletar.TabIndex = 88;
             this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // btnEditar
             // 
@@ -247,6 +248,7 @@
             // 
             this.btnImagem.BackColor = System.Drawing.Color.Gold;
             this.btnImagem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImagem.Enabled = false;
             this.btnImagem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnImagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnImagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
