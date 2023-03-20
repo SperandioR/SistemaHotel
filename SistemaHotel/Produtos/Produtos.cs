@@ -36,7 +36,7 @@ namespace SistemaHotel.Produtos
             txtValor.Enabled = false;
             txtEstoque.Enabled = false;
             cbFornecedor.Enabled = false;
-            btnImagem.Enabled = false;  
+            btnImagem.Enabled = false;
 
         }
         //Metodo para limpar o texto de cada campo: Enabled
@@ -143,8 +143,12 @@ namespace SistemaHotel.Produtos
         //Criando filtros dentro da caixa de dialogos.
         private void btnImagem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "";
+            OpenFileDialog dialog = new OpenFileDialog();//exibi uma caixa de diálogo padrão que solicita ao usuário abrir um arquivo.
+            dialog.Filter = "Arquivo JPG (*.jpg) |*.jpg";
+            if(dialog.ShowDialog() == DialogResult.OK)
+            {
+
+            }
         }
     }
 }
