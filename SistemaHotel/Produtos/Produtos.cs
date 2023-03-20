@@ -147,7 +147,8 @@ namespace SistemaHotel.Produtos
             dialog.Filter = "Imagens (*.jpg;*.png)|*.jpg;*.png|Todos os Arquivos(*.*)|*.*";
             if(dialog.ShowDialog() == DialogResult.OK)
             {
-
+                string foto = dialog.FileName.ToString();//criando uma variável do tipo string para extrair o caminho(FileName) do arquivo selecionado na caixa de dialogo(dialog) e passou a informação para a variável(foto). 
+               img.ImageLocation = foto; //Obtem ou define um caminho ou URL para a imagem a ser exibida.
             }
         }
     }
