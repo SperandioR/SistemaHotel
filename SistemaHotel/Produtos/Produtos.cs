@@ -143,8 +143,8 @@ namespace SistemaHotel.Produtos
         //Criando filtros dentro da caixa de dialogos.
         private void btnImagem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog();//exibi uma caixa de diálogo padrão que solicita ao usuário abrir um arquivo.
-            dialog.Filter = "Arquivo JPG (*.jpg) |*.jpg";
+            OpenFileDialog dialog = new OpenFileDialog();//exibir uma caixa de diálogo padrão que solicita ao usuário abrir um arquivo.
+            dialog.Filter = "Imagens (*.jpg;*.png)|*.jpg;*.png|Todos os Arquivos(*.*)|*.*";
             if(dialog.ShowDialog() == DialogResult.OK)
             {
 
